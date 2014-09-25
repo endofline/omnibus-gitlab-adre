@@ -1,32 +1,6 @@
-ADRE is a quick-and-dirty way to systematically de-brand (and re-brand) your omnibus-gitlab instance.
-
-The script works by offering a consistent way of replacing some branding-related files on each reconfigure.
-
-structure
----------
-
 This folder usually contains two sub-folders:
 
 1. backups/ - generated automatically when file backups are made
 2. rebrand/ - omnibus-gitlab file replacements
 
 See the READMEs in each of the above sub-folders for more information.
-
-usage
------
-
-To use the script, add the following line to /etc/gitlab/gitlab.rb:
-
-```
-require '<path to gitlab-adre.rb>'
-```
-
-Then reconfigure and restart omnibus-gitlab by executing:
-
-```
-gitlab-cti reconfigure
-gitlab-cti restart
-```
-
-Refresh your browser to see your changes.
-
