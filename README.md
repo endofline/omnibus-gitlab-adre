@@ -16,8 +16,8 @@ require '<path to gitlab-adre.rb>'
 Then reconfigure and restart omnibus-gitlab by executing:
 
 ```
-gitlab-cti reconfigure
-gitlab-cti restart
+gitlab-ctl reconfigure
+gitlab-ctl restart
 ```
 
 Refresh your browser to see your changes.
