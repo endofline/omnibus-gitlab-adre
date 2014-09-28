@@ -62,5 +62,11 @@ if File.directory? ("#{base_folder}rebrand/")
     "/opt/gitlab/embedded/service/gitlab-rails/app/views/layouts/devise.html.haml",
     backup_folder)
 
+  # _promo.html.haml - links below project/group list
+  replace_if_available(
+    "#{base_folder}rebrand/_promo.html.haml",
+    "/opt/gitlab/embedded/service/gitlab-rails/app/views/shared/_promo.html.haml",
+    backup_folder)
+
   puts("***** ADRE: END *****")
 end
