@@ -21,4 +21,3 @@ gitlab-ctl restart
 ```
 
 Refresh your browser to see your changes.
-
